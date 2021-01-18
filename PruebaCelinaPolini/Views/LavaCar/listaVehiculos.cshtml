@@ -1,0 +1,54 @@
+﻿@model List<PruebaCelinaPolini.Entidades.EntServicio>
+@{
+    ViewBag.Title = "Lista de Vehiculos";
+}
+
+<!DOCTYPE html>
+
+
+<h2>
+    @ViewBag.Title
+</h2>
+
+<div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLavado">
+        <label class="form-check-label" for="flexRadioLavado" name="lbl_nombre">
+            Lavado
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioEncerado" >
+        <label class="form-check-label" for="flexRadioEncerado" name="lbl_nombre">
+            Encerado
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLavadoI"checked>
+        <label class="form-check-label" for="flexRadioLavadoI" name="lbl_nombre">
+            Lavado interno
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-10">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Marca </th>
+                    <th scope="col">Placa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toyota</td>
+
+                    <td>LC2519256</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

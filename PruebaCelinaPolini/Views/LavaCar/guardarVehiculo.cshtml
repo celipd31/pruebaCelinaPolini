@@ -1,0 +1,48 @@
+﻿@model PruebaCelinaPolini.AccesoDatos.Vehiculo
+
+
+<!DOCTYPE html>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label for="inputNombre" class="form-label">Nombre del dueño</label>
+        <input type="text" class="form-control" id="inputName" name="txtNombre">
+
+    </div>
+    <div class="mb-3">
+        <label for="inputMarca" class="form-label">Marca de auto</label>
+        <input type="text" class="form-control" id="inputMarca" name="txtMarca">
+    </div>
+    <div class="mb-3">
+        <label for="inputPlaca" class="form-label">Placa del auto</label>
+        <input type="text" class="form-control" id="inputPlaca" name="txtPlaca">
+    </div>
+
+    <button type="submit" values="guardarVehiculo" class="btn btn-outline-primary" onclick="btnclick_Click">Guardar</button>
+    <button type="button" class="btn btn-outline-info">@Html.ActionLink("Listado Vehiculos", "listaVehiculos", "LavaCar")</button>
+
+}
+<form action="~/Views/Controllers/"></form>
+
+<div class="sticky-top" style="margin-top:10%; display: none">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Encerado
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Lavado
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+            Lavado interno
+        </label>
+    </div>
+</div>
+
